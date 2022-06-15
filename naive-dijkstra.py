@@ -18,7 +18,6 @@ def dijkstra(graph, initial, end):
                 min_val = path[key_min]
         cur = key_min
         queue.remove(cur)
-        print(cur)
 
         for i in graph[cur]:
             alternate = graph[cur][i] + path[cur]
